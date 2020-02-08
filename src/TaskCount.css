@@ -1,0 +1,135 @@
+:root{
+    --clr-first: rgb(199, 54, 90);
+    --clr-second: #f4f4f4;
+    --clr-third: #333;
+    --clr-fourth: rgb(99, 36, 36);
+    --space: 1rem;
+  }
+
+/* MAKING DELETE BUTTON HAVE WHITE BACKGROUND
+/* when user touches delete button red colour
+/* when user clicks it has pink border */
+.btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+  }
+
+  /* PINK BOARDER AROUND DELETE BUTTON after clicking */
+  .todo-header {
+    padding: var(--space);
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+/* POSITIONING OF TASKS AND DELETE BUTTON */
+.todo-body {
+    padding: var(--space);
+    position: relative;
+  }
+ 
+
+/* HIDING CHECKBOX AND LINK TO CROSSING-OUT LINE */  
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+ 
+/* POSITIONING OF THE TEXT AND CROSSING-OUT LINE */  
+.task label {
+    display: flex-inline;
+    align-items: center;
+    position: relative;
+  }
+
+
+/* POSITIONING OF THE TASKS & DELETE BUTTON */
+.task {
+    position: relative;
+    margin-bottom: 1.25em;
+  }
+  
+.task::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -0.5em;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.1;
+  }
+
+
+/* CHECKBOX CREATION */ 
+.custom-checkbox {
+    --size: 0.75em;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);
+    cursor: pointer;
+    border: 2px solid currentColor;
+    border-radius: 30%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: -webkit-transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out;  
+  }
+
+
+/* LARGENS CHECKBOX */ 
+.task:hover .custom-checkbox,
+  [type="checkbox"]:focus + label .custom-checkbox {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: var(--clr-first);
+  }
+
+
+ /* CROSSES OUT THE CHECKBOX */ 
+[type="checkbox"]:checked + label .custom-checkbox {
+    background: var(--clr-first);
+    border-color: var(--clr-first);
+    box-shadow: inset 0 0 0px 2px white;
+  }
+
+  
+/* LIGHTENS THE CROSS OF THE TASK */
+[type="checkbox"]:checked + label {
+    opacity: 0.5;
+  }
+  
+
+/* CREATES A CROSS OVER A TASK */
+.task label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    left: 1.5em;
+    top: 50%;
+    height: 3px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  }
+
+[type="checkbox"]:checked + label::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  
+
+ 
