@@ -9,7 +9,6 @@ class App extends React.Component {
     return (
       <div className= "container">
         <Header/>
-        <p> Hello there!!! </p>
       </div>
       
     );
