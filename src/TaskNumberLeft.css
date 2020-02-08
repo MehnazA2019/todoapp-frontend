@@ -1,0 +1,54 @@
+:root{
+    --clr-first: rgb(199, 54, 90);
+    --clr-second: #f4f4f4;
+    --clr-third: #333;
+    --clr-fourth: rgb(99, 36, 36);
+    --space: 1rem;
+  }
+  
+  /* FAILED BACKGROUND
+    .body{
+      background-image: url("https://drscdn.500px.org/photo/26780689/m%3D2058/adce904daf3def029d87b47292fe0c11");
+      background-size: cover;
+      background-attachment: fixed; 
+      background-repeat: no-repeat;
+      }
+ */ 
+
+   
+  
+.all-tasks {
+    grid-area: lists;
+  }
+
+/* Goals to accomplish TITLE SIZE */
+ .list-title {
+    font-family: "Lobster", serif;
+    font-size: calc(4.3vw + 1rem);  
+  }
+
+/* BACKGROUND COLOUR OF TOP PART OF LIST */
+  .todo-list {
+    grid-area: active;
+    background: var(--clr-second);
+    color: var(--clr-third);
+  }
+ */ 
+
+
+/*MARGIN ADJUSTMENT OF Goals to Accomplish */
+ .list-title {
+    margin: 0 1em 0 0;
+  }
+
+
+/* SIZE OF Goals Left: 5 */
+.task-count-one {
+    font-color: red;
+    margin: 2;
+    font-size: 1rem;
+  }
+
+
+ 
+

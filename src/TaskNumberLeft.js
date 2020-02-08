@@ -1,6 +1,7 @@
 import React from "react";
+import './TaskNumberLeft.css'
 
-class TaskNumber extends React.Component {
+class TaskNumberLeft extends React.Component {
   render() {
     return (
         <div className="todo-list">
@@ -15,6 +16,6 @@ class TaskNumber extends React.Component {
   }
 }
 
-export default TaskNumber;
+export default TaskNumberLeft;
 
 
