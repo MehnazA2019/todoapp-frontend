@@ -18,7 +18,7 @@
     color: rgba(0, 0, 0, 0.1);
     letter-spacing: 2px;
     margin: 30px 0px 80px;
-    /* margin: -0.3em 1.5 0.5em; */
+    margin-bottom: 200px;
   }
   
   .sub-title {
@@ -29,7 +29,7 @@
     font-family:"";
     color: rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
-    margin: -80px;
-    /* margin: -0.3em 1.5 0.5em; */
+    margin: -210px;
+    margin-bottom: 40px;
     
   }

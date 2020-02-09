@@ -4,6 +4,8 @@ import './Header.css'
 class Header extends React.Component {
     render() {
       return (
+        <div className="container">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"></link>
         <div className= 'HeaderStyling'> 
             <div className="row none md-block" >
                 <div className="col-12 header">
@@ -11,6 +13,7 @@ class Header extends React.Component {
                     <h6 className="sub-title">Organisation is the key to success</h6>
                 </div>
             </div>
+        </div>
         </div>
       );
     }
