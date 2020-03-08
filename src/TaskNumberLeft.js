@@ -8,7 +8,7 @@ class TaskNumberLeft extends React.Component {
             <div className="col-12">
                 <div className="todo-header">
                     <h2 className="list-title">Goals to accomplish</h2>
-                    <p className="task-count-one">Goals left: 5</p>
+                    <p className="task-count-one">Goals left:{this.props.taskNumberLeft}</p>
                 </div>
             </div>
         </div>
