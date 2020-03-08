@@ -7,10 +7,11 @@ class TaskCount extends React.Component {
   render() {
     return (
       <div className="body">
-
         <div className="todo-body">
           <div className="col-12 col-md-8">
             <div className="tasks">
+
+
               <div className="task">
                 <input
                   type="checkbox"
@@ -19,13 +20,14 @@ class TaskCount extends React.Component {
                 <label for="task-1">
                   <span className="custom-checkbox"></span>
                   Task 1
-              </label>
+                </label>
                 <div className="col-6 col-md-2">
                   <button type="button" className="btn btn-danger">Delete</button>
                 </div>
               </div>
 
 
+              
               <div className="task">
                 <input
                   type="checkbox"
@@ -34,7 +36,7 @@ class TaskCount extends React.Component {
                 <label for="task-2">
                   <span className="custom-checkbox"></span>
                   Task 2
-                </label>
+                  </label>
                 <div className="col-6 col-md-2">
                   <button type="button" className="btn btn-danger">Delete</button>
                 </div>
