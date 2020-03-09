@@ -6,6 +6,29 @@
     --space: 1rem;
   }
 
+
+/* DONE BUTTON */
+  
+.btn-done {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 0.25em;
+  transition: opacity 250ms ease-in;
+  opacity: 0.7;
+  font-size: 1rem;
+  transition: color green;
+  }
+  
+.btn-done.create:hover {
+  opacity: 0.7;
+  }
+  
+  
+.btn.done:hover {
+  color: var(green);
+  }
+
+
 /* MAKING DELETE BUTTON HAVE WHITE BACKGROUND
 /* when user touches delete button red colour
 /* when user clicks it has pink border */

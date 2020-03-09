@@ -7,6 +7,7 @@ class Task extends React.Component {
     return (
       <div className="body">
         <div className="todo-body">
+          <div className="row taskRow">
           <div className="col-12 col-md-8">
             <div className="tasks">
 
@@ -22,6 +23,7 @@ class Task extends React.Component {
                 </label>
 
                 <div className="col-6 col-md-2">
+                  <button type="button" className="btn btn-done">Done</button>
                   <button type="button" className="btn btn-danger">Delete</button>
                 </div>
 
@@ -30,6 +32,7 @@ class Task extends React.Component {
 
 
             </div>
+          </div>
           </div>
         </div>
       </div>
