@@ -3,6 +3,17 @@ import React from 'react';
 import './Task.css'
 
 class Task extends React.Component {
+
+
+  deleteClicked = () => {
+    alert('You clicked the delete button')
+  }
+
+  doneClicked = () => {
+    alert('You clicked the done button')
+  }
+
+
   render() {
     return (
       <div className="body">
@@ -23,8 +34,8 @@ class Task extends React.Component {
                 </label>
 
                 <div className="col-6 col-md-2">
-                  <button type="button" className="btn btn-done">Done</button>
-                  <button type="button" className="btn btn-danger">Delete</button>
+                  <button type="button" className="btn btn-done" onClick = {this.doneClicked}>Done</button>
+                  <button type="button" className="btn btn-danger" onClick ={this.deleteClicked}>Delete</button>
                 </div>
 
               </div>
