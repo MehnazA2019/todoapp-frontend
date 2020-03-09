@@ -5,7 +5,8 @@ import './App.css';
 import Header from './Header';
 import AddTask from './AddTask';
 import TaskNumberLeft from './TaskNumberLeft';
-import TaskCount from './TaskCount';
+import TaskList from './TaskList';
+import Task from './Task';
 
 class App extends React.Component {
 
@@ -25,7 +26,7 @@ class App extends React.Component {
           <Header/>
           <AddTask/>
           <TaskNumberLeft taskNumberLeft = {this.state.tasks.length}/>
-          <TaskCount/>
+          <TaskList taskCollection={this.state.tasks} />
         </div>
       
     );
