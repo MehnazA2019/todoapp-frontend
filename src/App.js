@@ -20,13 +20,18 @@ class App extends React.Component {
     ]
   }
 
+deleteTask = (taskId) => {
+  alert(`You deleted task ${taskId} (App.js)`)
+
+}
+
   render() {
     return (
         <div className= "container">
           <Header/>
           <AddTask/>
           <TaskNumberLeft taskNumberLeft = {this.state.tasks.length}/>
-          <TaskList taskCollection={this.state.tasks} />
+          <TaskList taskCollection={this.state.tasks} deleteTaskFunc={this.deleteTask}/>
         </div>
       
     );
